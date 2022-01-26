@@ -18,4 +18,16 @@ with ReplKeepAlive("token"):
     sleep(40)
 ```
 
-Registering servers, ports, and watchers are extracted away from the end user.
+Registering servers, ports, and watchers are abstracted away from the end user.
+
+When used as a context manager, the library will automatically handle registering and deregistering watchers as well as staring and keeping open webservers.
+
+If this is used in a larger project, like, say, a Discord bot, you should do any asyncio event loop logic (including `Client.run`) in the context manager scoping block.
+
+### Install
+
+You can install this package via pip:
+
+```
+pip install git+https://github.com/regulad/replutil.git
+```
