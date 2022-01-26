@@ -33,5 +33,5 @@ If this is used in a larger project, like, say, a Discord bot, you should do any
 You can install this package via pip:
 
 ```
-pip install git+https://github.com/regulad/replutil.git
+pip install replutil
 ```

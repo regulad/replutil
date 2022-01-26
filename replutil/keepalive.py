@@ -11,12 +11,7 @@ logger: Logger = getLogger(__name__)
 
 
 class ReplKeepAlive:
-    def __init__(
-        self,
-        upr_key: str,
-        *,
-        port: int = get_port()
-    ) -> None:
+    def __init__(self, upr_key: str, *, port: int = get_port()) -> None:
         quiet()
         assert in_repl()
 

@@ -10,7 +10,7 @@ def check_port_open(test_port: int) -> bool:
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.settimeout(1)
     try:
-       return sock.connect_ex(("127.0.0.1", test_port)) != 0
+        return sock.connect_ex(("127.0.0.1", test_port)) != 0
     finally:
         sock.close()
 
